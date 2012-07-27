@@ -4,7 +4,7 @@
 #messagetoolbar
 {
   position: absolute;
-  top: 75px;
+  top: 79px;
   left: 31px;
   right: 10px;
   height: 35px;
@@ -21,36 +21,54 @@
   padding-right: 10px;
 }
 
+#messagetoolbar a.button:hover{
+  border-color: 1px solid #222;
+}
+
 #messagetoolbar a.button,
 #messagetoolbar a.buttonPas {
   display: block;
   float: left;
-  width: 54px;
-  height: 26px;
-  padding: 0;
-  margin: 0 5px;
+  width: 57px;
   overflow: hidden;
-  background: url(images/sprite_black2.png) 0 0 no-repeat transparent;
+  background: url(images/gmail_button.png) 0 0 no-repeat transparent;
   opacity: 0.99; /* this is needed to make buttons appear correctly in Chrome */
+
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  height: 31px;
+  line-height: 31px;
+  margin-right: 10px;
+  min-width: 57px;
+  outline: 0 none;
+  padding: 0 8px;
+  text-align: center;
 }
+
+#messagetoolbar a.button:hover{
+  cursor: pointer;
+}
+
 
 #messagetoolbar a.buttonPas {
   opacity: 0.35;
 }
 
 #messagetoolbar a.checkmailSel {
-  background-position: 0 -32px;
+  background-position: -389px 0;
 }
 
 #messagetoolbar a.back {
-  background-position: -32px 0;
+  background-position: 0 0;
 }
 
 #messagetoolbar a.backSel {
-  background-position: -32px -32px;
+  background-position: 0 0;
 }
 
-#messagetoolbar a.compose {
+#messagetoolbar a.compose,
+#messagetoolbar a.composeSel {
   /*background-position: -64px 0;*/
   background-color: #D14836;
   background-image: -moz-linear-gradient(center top , #DD4B39, #D14836);
@@ -64,7 +82,7 @@
   font-weight: bold;
   height: 27px;
   line-height: 27px;
-  margin-right: 200px;
+  margin-right: 110px;
   min-width: 110px;
   outline: 0 none;
   padding: 0 8px;
@@ -78,74 +96,74 @@
   background-image: -moz-linear-gradient(center top , #DD4B39, #C53727);
 }
 
-#messagetoolbar a.composeSel {
-  background-position: -64px -32px;
-}
-
 #messagetoolbar a.reply {
-  background-position: -96px 0;
+  background-position: -159px 0;
 }
 
 #messagetoolbar a.replySel {
-  background-position: -96px -32px;
+  background-position: -159px 0px;
 }
 
 #messagetoolbar a.replyAll {
-  background-position: -128px 0;
+  background: url(images/replyall.png) 0 0 no-repeat transparent;
 }
 
 #messagetoolbar a.replyAllSel {
-  background-position: -128px -32px;
+  background: url(images/replyall.png) 0 0 no-repeat transparent;
 }
 
 #messagetoolbar a.forward {
-  background-position: -160px 0;
+  background-position: -317px 0;
 }
 
 #messagetoolbar a.forwardSel {
-  background-position: -160px -32px;
+  background-position: -317px -32px;
 }
 
 #messagetoolbar a.delete {
-  background-position: -192px 0;
+  background-position: -230px 0;
+}
+
+#messagetoolbar a.checkmail {
+  background-position: -389px 0;
 }
 
 #messagetoolbar a.deleteSel {
-  background-position: -192px -32px;
+  background-position: -230px 0;
 }
 
 #messagetoolbar a.markmessage {
-  background-position: -256px 0;
+  background-position: -87px 0;
 }
 
 #messagetoolbar a.messagemenu {
-  background-position: -288px 0;
+  background-position: -477px 0;
 }
 
 #messagetoolbar a.spellcheck {
-  background-position: -384px 0;
+  background: url(images/checksp.png) 0 0 no-repeat transparent;
 }
 
 #messagetoolbar a.spellcheckSel {
-  background-position: -384px -32px;
+  background: url(images/checksp.png) 0 0 no-repeat transparent;
 }
 
 #messagetoolbar a.attach {
-  background-position: -352px 0;
+  background: url(images/att.png) 0 0 no-repeat transparent;
 }
 
 #messagetoolbar a.attachSel {
-  background-position: -352px -32px;
+  background: url(images/att.png) 0 0 no-repeat transparent;
 }
 
 #messagetoolbar a.insertsig {
-  background-position: -448px 0;
+  background: url(images/sign.png) 0 0 no-repeat transparent;
 }
 
 #messagetoolbar a.insertsigSel {
-  background-position: -448px -32px;
+  background: url(images/sign.png) 0 0 no-repeat transparent;
 }
-
+/*
 #messagetoolbar a.savedraft {
   background-position: -322px 0;
 }
@@ -153,15 +171,37 @@
 #messagetoolbar a.savedraftSel {
   background-position: -322px -32px;
 }
-
-#messagetoolbar a.send {
-  background-position: -416px 0;
-}
-
+*/
+#messagetoolbar a.send,
+#messagetoolbar a.savedraft,
+#messagetoolbar a.savedraftSel,
 #messagetoolbar a.sendSel {
-  background-position: -416px -32px;
+  background-color: #D14836;
+  background-image: -moz-linear-gradient(center top , #DD4B39, #D14836);
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  border-radius: 2px 2px 2px 2px;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  height: 27px;
+  line-height: 27px;
+  /*margin-right: 110px;*/
+  min-width: 50px;
+  outline: 0 none;
+  padding: 0 8px;
+  text-align: center;
 }
-
+#messagetoolbar a.send:hover,
+#messagetoolbar a.savedraft:hover,
+#messagetoolbar a.savedraftSel:hover,
+#messagetoolbar a.sendSel:hover
+{
+  background-color: #C53727;
+  background-image: -moz-linear-gradient(center top , #DD4B39, #C53727);
+}
 #messagetoolbar select.mboxlist
 {
   position: relative;
