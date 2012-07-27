@@ -4,14 +4,15 @@
 #messagetoolbar
 {
   position: absolute;
-  top: 47px;
-  left: 205px;
+  top: 75px;
+  left: 31px;
   right: 10px;
   height: 35px;
   min-width: 650px;
   white-space: nowrap;
 /*  border: 1px solid #cccccc; */
 }
+
 
 #messagetoolbar a
 {
@@ -24,12 +25,12 @@
 #messagetoolbar a.buttonPas {
   display: block;
   float: left;
-  width: 32px;
-  height: 32px;
+  width: 54px;
+  height: 26px;
   padding: 0;
   margin: 0 5px;
   overflow: hidden;
-  background: url(images/mail_toolbar.png) 0 0 no-repeat transparent;
+  background: url(images/sprite_black2.png) 0 0 no-repeat transparent;
   opacity: 0.99; /* this is needed to make buttons appear correctly in Chrome */
 }
 
@@ -50,7 +51,31 @@
 }
 
 #messagetoolbar a.compose {
-  background-position: -64px 0;
+  /*background-position: -64px 0;*/
+  background-color: #D14836;
+  background-image: -moz-linear-gradient(center top , #DD4B39, #D14836);
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  border-radius: 2px 2px 2px 2px;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  height: 27px;
+  line-height: 27px;
+  margin-right: 200px;
+  min-width: 110px;
+  outline: 0 none;
+  padding: 0 8px;
+  text-align: center;
+
+}
+
+
+#messagetoolbar a.compose:hover{
+  background-color: #C53727;
+  background-image: -moz-linear-gradient(center top , #DD4B39, #C53727);
 }
 
 #messagetoolbar a.composeSel {
@@ -273,8 +298,8 @@
   width: 100%;
   top: 0;
   bottom: 0;
-  border: 1px solid #999999;
-  background-color: #F9F9F9;
+  /*border: 1px solid #999999;*/
+  background-color: #FFF;
   overflow: hidden;
 }
 
@@ -343,8 +368,8 @@
   left: 0;
   width: 100%;
   bottom: 0;
-  border: 1px solid #999;
-  background-color: #F9F9F9;
+  /*border: 1px solid #999;*/
+  background-color: #FFF;
   overflow: hidden;
 }
 
@@ -432,10 +457,17 @@
   display: block;
   position: relative;
   padding-left: 25px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 6px;
+  /*padding-bottom: 2px;*/
   text-decoration: none;
-  height: 15px;
+  height: 25px;
+  /*font-weight: bold;*/
+  font-size: 12px;
+}
+
+#mailboxlist li a:hover{
+  background-color: #F8F8F8;
+  cursor: pointer;
 }
 
 #mailboxlist li.unread
@@ -451,13 +483,14 @@
 #mailboxlist li.selected,
 #mailboxlist li.droptarget li.selected
 {
-  background-color: #929292;
+  /*background-color: #929292;*/
+  border-left: 3px solid #DD4B39;
 }
 
 #mailboxlist li.selected > a,
 #mailboxlist li.droptarget li.selected a
 {
-  color: #FFF;
+  color: #DD4B39;
   font-weight: bold;
 }
 
@@ -676,7 +709,7 @@ body.messagelist
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   border-bottom: 1px solid #EBEBEB;
-  cursor: default;
+  cursor: pointer;
 }
 
 #messagelist tbody tr td a
@@ -860,12 +893,21 @@ body.messagelist
 #messagelist tbody tr td.subject
 {
   width: 99%;
+  font-size:12px;
 }
 
 #messagelist tbody tr td.subject a
 {
-  cursor: default;
+  cursor: pointer;
   vertical-align: middle; /* #1487091 */
+}
+
+#messagelist tbody tr:hover{
+  background-color: #F7F7F7;
+}
+
+#messagelist tr:hover .threads{
+  border-left: 2px solid #DD4B39;
 }
 
 /* thread parent message with unread children */
@@ -908,7 +950,13 @@ body.messagelist
 
 #messagelist tr.message
 {
-  background-color: #FFF;
+  background-color: none repeat scroll 0 0 rgba(243, 243, 243, 0.85);
+  color: #222;
+  height: 30px;
+}
+
+#messagelist tr.message:hover{
+  cursor: pointer;
 }
 
 #messagelist tr.unread
@@ -925,8 +973,8 @@ body.messagelist
 
 #messagelist tr.selected td
 {
-  color: #FFFFFF;
-  background-color: #CC3333;
+  color: #222222;
+  background-color: #F7F7F7;
 }
 
 #messagelist tr.unfocused td
@@ -937,7 +985,7 @@ body.messagelist
 
 #messagelist tr.selected td a
 {
-  color: #FFFFFF;
+  color: #222222;
 }
 
 #messagelist tr.unfocused td a
@@ -1463,5 +1511,5 @@ input.from_address
   position: absolute;
   top: 3px;
   right: 6px;
-  z-index: 101;
+  /*z-index: 101;*/
 }

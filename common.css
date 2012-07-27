@@ -4,7 +4,7 @@ body
 {
   font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
   margin: 8px;
-  background-color: #F6F6F6;
+  background-color: #FFF;
   color: #000;
   font-size: 12px;
 }
@@ -148,7 +148,7 @@ img
 #mainscreen
 {
   position: absolute;
-  top: 85px;
+  top: 110px;
   right: 20px;
   bottom: 20px;
   left: 20px;
@@ -348,8 +348,8 @@ body.iframe .boxtitle
   right: 0px;
   overflow: hidden;
   height: 22px;
-  border-top: 1px solid #999;
-  background: url(images/listheader.gif) top left repeat-x #CCC;
+  /*border-top: 1px solid #999;*/
+  /*background: url(images/listheader.gif) top left repeat-x #CCC;*/
 }
 
 .boxfooter a.button,
