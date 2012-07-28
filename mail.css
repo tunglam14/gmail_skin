@@ -1385,7 +1385,7 @@ div.hide-headers
 {
   height: 22px;
   background: none;
-  border-top: 0;
+  /*border-top: 1px solid #ccc*/;
 }
 
 #compose-div .boxlistcontent
@@ -1552,4 +1552,7 @@ input.from_address
   top: 3px;
   right: 6px;
   /*z-index: 101;*/
+}
+#messagelist thead{
+  background-color: #ccc;
 }

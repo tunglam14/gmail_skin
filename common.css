@@ -401,6 +401,7 @@ body.iframe .boxtitle
   height: 22px;
   /*border-top: 1px solid #999;*/
   /*background: url(images/listheader.gif) top left repeat-x #CCC;*/
+  border-top: 1px solid #ccc
 }
 
 .boxfooter a.button,

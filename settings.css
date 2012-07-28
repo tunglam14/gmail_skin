@@ -31,7 +31,23 @@
   cursor: default;
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
-  height: 18px;
+  height: 30px;
+  font-size: 12px;
+}
+
+#subscription-table tbody tr:hover,
+#identities-table tbody tr:hover,
+#sections-table tbody tr:hover{
+  background-color: #f2f2f2;
+  border-left: 2px solid #DD4B39;
+
+}
+
+#subscription-table thead .section,
+#identities-table thead .section,
+#sections-table thead .section{
+  border-bottom: 1px solid #ccc;  
+  background-color: #fff;
 }
 
 #subscription-table tr.virtual td
@@ -115,9 +131,10 @@ input.disabled
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   bottom: 0;
-  border: 1px solid #999999;
-  background-color: #F9F9F9;
+  /*border: 1px solid #999;*/
+  background-color: #FFF;
   overflow: hidden;
 }
 
@@ -169,4 +186,9 @@ body.iframe,
 #rcmfd_signature
 {
   font-family: monospace;
+}
+
+#sections-table tr{
+  /*height: 20px*/;
+
 }
