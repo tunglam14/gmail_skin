@@ -1556,3 +1556,8 @@ input.from_address
 #messagelist thead{
   background-color: #ccc;
 }
+
+#messagelist thead tr{
+  background: #fff;
+  border-bottom: 1px solid #ccc;  
+}
