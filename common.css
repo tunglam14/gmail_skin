@@ -148,7 +148,7 @@ img
 #mainscreen
 {
   position: absolute;
-  top: 110px;
+  top: 115px;
   right: 20px;
   bottom: 20px;
   left: 20px;
@@ -291,6 +291,18 @@ body > #message a
   background: url(images/listheader.gif) top left repeat-x #CCC;
 }
 
+
+.loginformboxtitle{
+  color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px !important;
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 1px solid #AACCEE;
+    height: auto !important;
+}
+
 .boxtitle .rightalign
 {
   float: right;
@@ -310,11 +322,50 @@ body.iframe .boxtitle
   background-color: #F2F2F2;
 }
 
+
+#login-form .boxcontent{
+  padding: 15px 10px 10px;
+  background:none repeat scroll 0 0 #E9F4FF;
+}
 .boxcontent table td.title
 {
   color: #666;
   padding-right: 10px;
 }
+
+#login-form .mainaction{
+  border: 1px solid #AACCEE;
+  font-weight: bold;
+}
+
+#login-form .button{
+  background: none repeat scroll 0 0 #F4FBFF;
+    border: 1px solid #AACCEE;
+    color: #2C7DCF;
+    font-size: 11px;
+    height: 26px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#login-form .button:hover{
+  background: none repeat scroll 0 0 #DDF1FD;
+}
+
+#login-form input{
+  -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    border-color: #AAADB2 #E4E4EE #E4E4EE;
+    border-right: 1px solid #E4E4EE;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+}
+
 
 .boxlistcontent
 {
@@ -728,11 +779,16 @@ a.rcmContactAddress:hover
 
 #login-form
 {
-  margin-left: auto;
+  /*margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   width: 400px;
-  border: 1px solid #999;
+  border: 1px solid #999;*/
+  background: none repeat scroll 0 0 #E9F4FF;
+    border: 1px solid #AACCEE;
+    box-shadow: 3px 3px 4px #C0DCEE;
+    margin: 0 auto;
+    width: 420px;
 }
 
 #login-form table td.title
