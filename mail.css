@@ -72,6 +72,7 @@
   /*background-position: -64px 0;*/
   background-color: #D14836;
   background-image: -moz-linear-gradient(center top , #DD4B39, #D14836);
+  background-image: -webkit-gradient(linear, center top, center bottom,from(#DD4B39),to(#D14836));
   border: 1px solid transparent;
   color: #FFFFFF;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
@@ -94,6 +95,7 @@
 #messagetoolbar a.compose:hover{
   background-color: #C53727;
   background-image: -moz-linear-gradient(center top , #DD4B39, #C53727);
+  background-image: -webkit-gradient(linear, center top, center bottom,from(#DD4B39),to(#C53727));
 }
 
 #messagetoolbar a.reply {
@@ -178,6 +180,7 @@
 #messagetoolbar a.sendSel {
   background-color: #D14836;
   background-image: -moz-linear-gradient(center top , #DD4B39, #D14836);
+  background-image: -webkit-gradient(linear, center top, center bottom,from(#DD4B39),to(#D14836));
   border: 1px solid transparent;
   color: #FFFFFF;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
@@ -201,6 +204,7 @@
 {
   background-color: #C53727;
   background-image: -moz-linear-gradient(center top , #DD4B39, #C53727);
+  background-image: -webkit-gradient(linear, center top, center bottom,from(#DD4B39),to(#C53727));
 }
 #messagetoolbar select.mboxlist
 {
