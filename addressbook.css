@@ -147,7 +147,7 @@
 {
   display: block;
   font-size: 11px;
-  background: url(images/icons/folders.png) 5px -108px no-repeat;
+  background: transparent;
   border-bottom: 1px solid #EBEBEB;
   white-space: nowrap;
 }

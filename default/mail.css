@@ -366,7 +366,7 @@
   display: block;
   position: relative;
   font-size: 11px;
-  background: url(images/icons/folders.png) 5px 0 no-repeat;
+  background: transparent;
   border-bottom: 1px solid #EBEBEB;
 }
 
