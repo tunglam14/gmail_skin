@@ -804,10 +804,20 @@ a.rcmContactAddress:hover
   margin: auto;
 }
 
-#login-form table td.input input
+#rcmlogindomain
 {
-  width: 200px;
+  width: 88px;
 }
+
+#rcmloginuser{
+  width: 104px; 
+}
+
+
+#rcmloginpwd{
+  width: 200px; 
+}
+
 
 #console
 {
