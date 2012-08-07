@@ -800,7 +800,7 @@ a.rcmContactAddress:hover
 
 #login-form table
 {
-  width: 1%;
+  /*width: 1%;*/
   margin: auto;
 }
 
@@ -810,12 +810,12 @@ a.rcmContactAddress:hover
 }
 
 #rcmloginuser{
-  width: 100px; 
+  /*width: 108px; */
 }
 
 
 #rcmloginpwd{
-  width: 200px; 
+  /*width: 200px; */
 }
 
 
