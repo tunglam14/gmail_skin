@@ -966,6 +966,7 @@ body.messagelist
   border-left: none;
 }
 
+
 /* thread parent message with unread children */
 #messagelist tbody tr.unroot td.subject a
 {
@@ -1030,24 +1031,29 @@ body.messagelist
 #messagelist tr.selected td
 {
   color: #222222;
-  background-color: #F9F9F9;
+  background-color: #fff;
 }
 
 #messagelist tr.unfocused td
 {
-  color: #FFFFFF;
-  background-color: #929292;
+  color: #222;
+  background-color: #fff;
 }
+
+#messagelist tr.unfocused .threads{
+  border-left: 2px solid #DD4B39;  
+}
+
 
 #messagelist tr.selected td a
 {
   color: #222222;
 }
 
-#messagelist tr.unfocused td a
+/*#messagelist tr.unfocused td a
 {
   color: #FFFFFF;
-}
+}*/
 
 #messagelist tr.deleted td,
 #messagelist tr.deleted td a
