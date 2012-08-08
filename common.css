@@ -359,11 +359,17 @@ body.iframe .boxtitle
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
     background-color: #FFFFFF;
-    border-color: #AAADB2 #E4E4EE #E4E4EE;
-    border-right: 1px solid #E4E4EE;
+    /*border-color: #AAADB2 #E4E4EE #E4E4EE;*/
+    border-color: #AACCEE;
+    /*border-right: 1px solid #E4E4EE;*/
     border-style: solid;
     border-width: 1px;
     color: #333333;
+}
+
+#login-form input:focus{
+  box-shadow: 3px 3px 4px #C0DCEE;
+  /*background-color: #FBFFCE;*/
 }
 
 
@@ -790,6 +796,7 @@ a.rcmContactAddress:hover
     box-shadow: 3px 3px 4px #C0DCEE;
     margin: 0 auto;
     width: 420px;
+    color: #666;
 }
 
 #login-form table td.title
@@ -809,13 +816,9 @@ a.rcmContactAddress:hover
   width: 88px;
 }
 
-#rcmloginuser{
+#rcmloginuser, #rcmloginpwd{
   /*width: 108px; */
-}
-
-
-#rcmloginpwd{
-  /*width: 200px; */
+  height: 20px;  
 }
 
 
