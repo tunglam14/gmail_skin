@@ -958,7 +958,11 @@ body.messagelist
   border-left: 2px solid #DD4B39;
 }
 
-#messagelist tr:first-child:hover .threads{
+#messagelist tr.selected .threads{
+  border-left: 2px solid #DD4B39;
+}
+
+#messagelist thead tr:hover .threads{
   border-left: none;
 }
 
