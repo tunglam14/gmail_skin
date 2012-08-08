@@ -370,6 +370,8 @@ body.iframe .boxtitle
 
 #login-form input:focus{
   box-shadow: 3px 3px 4px #C0DCEE;
+  -moz-box-shadow:3px 3px 4px #C0DCEE;
+  -webkit-box-shadow:3px 3px 4px #C0DCEE;
   /*background-color: #FBFFCE;*/
 }
 
@@ -795,6 +797,9 @@ a.rcmContactAddress:hover
   background: none repeat scroll 0 0 #E9F4FF;
     border: 1px solid #AACCEE;
     box-shadow: 3px 3px 4px #C0DCEE;
+    -moz-box-shadow:3px 3px 4px #C0DCEE;
+    -webkit-box-shadow:3px 3px 4px #C0DCEE;
+
     margin: 0 auto;
     width: 420px;
     color: #666;
