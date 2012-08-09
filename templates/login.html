@@ -10,7 +10,7 @@
 <roundcube:object name="mylogo" border="0" style="margin:0 11px" />
 <!-- <roundcube:object name="logo" src="/images/roundcube_logo.png" id="logo" border="0" style="margin:0 11px" /> -->
 
-<roundcube:object name="message" id="message" />
+
 
 <div id="login-form">
 <div class="loginformboxtitle"><roundcube:label name="welcome" /></div>
@@ -18,7 +18,10 @@
 
 <form name="form" action="./" method="post">
     <roundcube:object name="loginform" form="form"/>
-    <p style="text-align:center;"><input type="submit" class="button mainaction" value="<roundcube:label name='login' />" /></p>
+        <roundcube:object name="message" id="message" style="text-align:center;"/>
+    <p style="text-align:center;">
+        <input type="submit" class="button mainaction" value="<roundcube:label name='login' />" />
+    </p>
 </form>
 </div>
 </div>

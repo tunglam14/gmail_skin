@@ -1,4 +1,16 @@
 <div id="taskbar">
+
+<!-- <div id="searchfilter">
+  <label for="rcmlistfilter"><roundcube:label name="filter" /></label>:
+  <roundcube:object name="searchfilter" class="searchfilter" />
+</div> -->
+<!-- Search form -->
+<span>
+<roundcube:button name="searchmenulink" id="" image="/images/icons/glass_roll.png" onclick="rcmail_ui.show_popup('searchmenu');return false" title="searchmod" />
+<roundcube:object name="searchform" id="" />
+<roundcube:button command="reset-search" id="" image="/images/icons/reset.gif" title="resetsearch" />
+</span>
+
 <roundcube:button command="mail" label="mail" class="button-mail" />
 <roundcube:button command="addressbook" label="addressbook" class="button-addressbook" />
 <roundcube:container name="taskbar" id="taskbar" />

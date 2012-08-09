@@ -3,6 +3,8 @@
 <!-- Compose button -->
 <roundcube:button command="compose" type="link" class="button compose" classAct="button compose" classSel="button composeSel" title="writenewmessage" content="COMPOSE" />
 
+<a><roundcube:object name="searchfilter" /></a>
+
 <roundcube:button command="reply" type="link" class="buttonPas reply" classAct="button reply" classSel="button replySel" title="replytomessage" content=" " />
 
 <roundcube:if condition="template:name == 'message'" />
@@ -69,7 +71,8 @@
     <li><roundcube:button command="mark" prop="unread" label="markunread" classAct="unreadlink active" class="unreadlink" /></li>
     <li><roundcube:button command="mark" prop="flagged" label="markflagged" classAct="flaggedlink active" class="flaggedlink" /></li>
     <li><roundcube:button command="mark" prop="unflagged" label="markunflagged" classAct="unflaggedlink active" class="unflaggedlink" /></li>
-    <roundcube:container name="markmenu" id="markmessagemenu" />
+    <a><roundcube:container name="markmenu" id="markmessagemenu" /></a>
   </ul>
 </div>
+
 <roundcube:endif />

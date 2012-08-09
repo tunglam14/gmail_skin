@@ -7,7 +7,7 @@ body
   background-color: #FFF;
   color: #000;
   font-size: 12px;
-  /*background: url('images/header.png') no-repeat top left;*/
+  /*background: url('http://o.aolcdn.com/cdn.webmail.aol.com/themes/resources/v2/breeze/hat_bg2.png') no-repeat top left;*/
 }
 
 body.iframe
@@ -153,6 +153,7 @@ img
   right: 20px;
   bottom: 20px;
   left: 20px;
+  background: url("http://o.aolcdn.com/cdn.webmail.aol.com/themes/resources/v2/breeze/hat_bg2.png") no-repeat scroll left -71px transparent;
 }
 
 body > #header
@@ -226,16 +227,17 @@ body > #message
 
 body > #message div
 {
-  width: 400px;
+  width: 150px;
   margin: 0px;
   min-height: 22px;
-  padding: 8px 10px 8px 46px;
+  padding: 8px 10px 8px 34px;
+  font-weight: bold;
 }
 
 body > #message div.notice,
 #message-objects div.notice
 {
-  background: url(images/display/icons.png) 6px 3px no-repeat;
+  background: url(images/display/icons.png) 2px 3px no-repeat;
   background-color: #F7FDCB;
   border: 1px solid #C2D071;
 }
@@ -253,7 +255,7 @@ body > #message div.warning,
 body > #message div.confirmation,
 #message-objects div.confirmation
 {
-  background: url(images/display/icons.png) 6px -47px no-repeat;
+  background: url(images/display/icons.png) 2px -47px no-repeat;
   background-color: #A6EF7B;
   border: 1px solid #76C83F;
 }
@@ -261,7 +263,7 @@ body > #message div.confirmation,
 body > #message div.loading,
 #message-objects div.loading
 {
-  background: url(images/display/loading.gif) 6px 3px no-repeat;
+  background: url(images/display/loading.gif) 100px 5px no-repeat;
   background-color: #EBEBEB;
   border: 1px solid #CCCCCC;
 }
@@ -1025,3 +1027,12 @@ fieldset.tabbed
 .quota_text_high { color: white; }
 .quota_text_mid { color: #666; }
 .quota_text_low { color: #666; }
+
+#login-form div.warning{
+  color: red;
+}
+
+#login-form div.loading{
+  background: url("images/display/loading.gif") no-repeat scroll 223px -2px transparent;
+  padding-right: 17px;
+}

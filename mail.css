@@ -413,7 +413,7 @@
   width: 100%;
   bottom: 0;
   /*border: 1px solid #999;*/
-  background-color: #FFF;
+  /*background-color: #FFF;*/
   overflow: hidden;
 }
 
@@ -427,7 +427,7 @@
   list-style-type: none;
   overflow: hidden;
   white-space: nowrap;
-  background-color: #FFF;
+  /*background-color: #FFF;*/
 }
 
 #mailboxlist li
@@ -551,7 +551,7 @@
   border-top: 1px solid #EBEBEB;
   padding-left: 15px;
   background-position: 25px 1px;
-  background-color: #FFF;
+  /*background-color: #FFF;*/
   color: blue;
   font-weight: normal;
 }
@@ -685,7 +685,7 @@
 body.messagelist
 {
   margin: 0px;
-  background-color: #F9F9F9;
+  /*background-color: #F9F9F9;*/
 }
 
 #messagelist
@@ -696,7 +696,7 @@ body.messagelist
 }
 
 #messagelist{
-  background: #f5f5f5;
+  /*background: #f5f5f5;*/
 }
 
 #messagelist thead tr td
@@ -719,12 +719,12 @@ body.messagelist
 
 #messagelist thead tr td.sortedASC a
 {
-  background: url(images/icons/sort.gif) right 0 no-repeat;
+  background: url(images/icons/sort.gif) right 0 no-repeat transparent;
 }
 
 #messagelist thead tr td.sortedDESC a
 {
-  background: url(images/icons/sort.gif) right -14px no-repeat;
+  background: url(images/icons/sort.gif) right -14px no-repeat transparent;
 }
 
 #messagelist thead tr td a
@@ -820,7 +820,7 @@ body.messagelist
   vertical-align: middle;
   height: 17px;
   width: 15px;
-  background: url(images/messageicons.png) center no-repeat;
+  background: url(images/messageicons.png) center no-repeat transparent;
 }
 
 #messagelist tr td.attachment span.attachment
@@ -1019,7 +1019,7 @@ body.messagelist
 #messagelist tr.unread
 {
   font-weight: bold;
-  background-color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
 }
 
 #messagelist tr.flagged td,
@@ -1041,7 +1041,7 @@ body.messagelist
 }
 
 #messagelist tr.unfocused .threads{
-  border-left: 2px solid #DD4B39;  
+  border-left: 2px solid #226165;
 }
 
 
@@ -1582,4 +1582,15 @@ input.from_address
 #messagelist thead tr{
   background: #fff;
   border-bottom: 1px solid #ccc;  
+}
+
+#rcmlistfilter {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border: 1px solid #D6D6D6;
+    font-size: 11px;
+    height: 30px;
+    padding: 8px 0 1px;
+    text-transform: uppercase;
+    width: 80px;
+    z-index: 10;
 }
