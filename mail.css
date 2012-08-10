@@ -9,9 +9,10 @@
   left: 0;
   /*right: 10px;*/
   height: 44px;
-  /*min-width: 100%;*/
+  min-width: 97.6%;
   white-space: nowrap;
-  /*border-bottom: 1px solid #cccccc; */
+  border-bottom: 1px solid #cccccc; 
+  box-shadow: -15px 2px 3px #f1f1f1;
 }
 
 
@@ -317,6 +318,7 @@
   bottom: 0;
   right: 0;
   min-width: 600px;
+  border-left: 1px solid #ccc;
 }
 
 #mailrightcontent
@@ -344,7 +346,7 @@
   top: 0;
   bottom: 0;
   /*border: 1px solid #999999;*/
-  background-color: #FFF;
+  background-color: #F5F5F5;
   overflow: hidden;
 }
 
@@ -706,7 +708,7 @@ body.messagelist
   height: 20px;
   padding: 0 4px 0 2px;
   vertical-align: middle;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #ebebeb;
   color: #333333;
   /*background: url(images/listheader.gif) top left repeat-x #CCC;*/
   font-size: 11px;
@@ -1595,7 +1597,6 @@ input.from_address
 
 #messagelist thead tr{
   background: #fff;
-  border-bottom: 1px solid #ccc;  
   height: 30px;
 }
 

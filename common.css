@@ -160,8 +160,9 @@ img
 #mainscreen
 {
   position: absolute;
-  top: 123px;
-  right: 20px;
+  top: 138px;
+  /*right: 20px;*/
+  right: 0;
   bottom: 20px;
   left: 20px;
   /*background: url("http://o.aolcdn.com/cdn.webmail.aol.com/themes/resources/v2/breeze/hat_bg2.png") no-repeat scroll left -71px transparent;*/
