@@ -908,7 +908,7 @@ body.messagelist
 
 #messagelist tr td.status span.msgicon:hover
 {
-  background-position: 0 -272px;
+  /*background-position: 0 -272px;*/
 }
 
 #messagelist tr td.status span.deleted,
@@ -955,7 +955,11 @@ body.messagelist
 }
 
 #messagelist tbody tr:hover{
-  background-color: #F7F7F7;
+  background-color: #F7F7F7;  
+}
+
+#messagelist tbody tr:hover td.status span.msgicon{
+  background-position: 0 -272px;
 }
 
 #messagelist tr:hover .threads{
@@ -1046,6 +1050,11 @@ body.messagelist
 
 #messagelist tr.unfocused .threads{
   border-left: 2px solid #226165;
+}
+
+#messagelist tr.unfocused td.status span.msgicon,
+#messagelist tr.selected td.status span.msgicon{
+  background-position: 0 -272px;
 }
 
 
@@ -1595,7 +1604,7 @@ input.from_address
     border: 1px solid #D6D6D6;
     font-size: 11px;
     height: 30px;
-    padding: 8px 0 1px;
+    padding: 7px 6px 7px 23px;
     text-transform: uppercase;
     width: 80px;
     z-index: 10;

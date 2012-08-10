@@ -9,12 +9,12 @@
 
    <tr align="center">
    	<td rowspan="2">
-   		
-        <roundcube:object name="searchform" id="searchinput" placeholder="search"
-        />
-
+   		  
+        <roundcube:object name="searchform" id="searchinput" />
+        <roundcube:if condition="template:name != 'settings'" />
         <roundcube:button name="searchmenulink" id="searchroll" image="/images/icons/glass_roll.png" onclick="rcmail_ui.show_popup('searchmenu');return false" title="searchmod" style="background:none"/>
         <!-- <roundcube:button command="reset-search" id="searchcancel" image="/images/icons/reset.gif" title="resetsearch" /> -->
+        <roundcube:endif />
         &nbsp;&nbsp;&nbsp;
    	</td>
 
@@ -36,5 +36,7 @@
   </tr>
   
 </table>
+
+<span class="foot"></span>
 
 </div>
