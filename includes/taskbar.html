@@ -5,15 +5,36 @@
   <roundcube:object name="searchfilter" class="searchfilter" />
 </div> -->
 <!-- Search form -->
-<span>
-<roundcube:button name="searchmenulink" id="" image="/images/icons/glass_roll.png" onclick="rcmail_ui.show_popup('searchmenu');return false" title="searchmod" />
-<roundcube:object name="searchform" id="" />
-<roundcube:button command="reset-search" id="" image="/images/icons/reset.gif" title="resetsearch" />
-</span>
+<table width="100%" >
 
-<roundcube:button command="mail" label="mail" class="button-mail" />
-<roundcube:button command="addressbook" label="addressbook" class="button-addressbook" />
-<roundcube:container name="taskbar" id="taskbar" />
-<roundcube:button command="settings" label="settings" class="button-settings" />
-<roundcube:button command="logout" label="logout" class="button-logout" />
+   <tr align="center">
+   	<td rowspan="2">
+   		
+        <roundcube:object name="searchform" id="searchinput" placeholder="search"
+        />
+
+        <roundcube:button name="searchmenulink" id="searchroll" image="/images/icons/glass_roll.png" onclick="rcmail_ui.show_popup('searchmenu');return false" title="searchmod" style="background:none"/>
+        <!-- <roundcube:button command="reset-search" id="searchcancel" image="/images/icons/reset.gif" title="resetsearch" /> -->
+        &nbsp;&nbsp;&nbsp;
+   	</td>
+
+    <td align="left">
+    	<span id="username"><roundcube:object name="myname"/></span>
+    </td>
+  </tr>
+
+  <tr>
+    
+    <td>
+		<roundcube:button command="mail" label="mail" class="button-mail" />&nbsp;|&nbsp;
+        <roundcube:button command="addressbook" label="addressbook" class="button-addressbook" />&nbsp;|&nbsp;
+        <!-- roundcube:container name="taskbar" id="taskbar" />&nbsp;|&nbsp; -->
+        <roundcube:button command="settings" label="settings" class="button-settings" />&nbsp;|&nbsp;
+        <roundcube:button command="logout" label="logout" class="button-logout" />
+    </td>
+    </td>
+  </tr>
+  
+</table>
+
 </div>

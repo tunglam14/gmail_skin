@@ -4,13 +4,14 @@
 #messagetoolbar
 {
   position: absolute;
-  top: 79px;
-  left: 31px;
-  right: 10px;
-  height: 35px;
-  min-width: 650px;
+  top: 93px;
+  padding-left: 31px;
+  left: 0;
+  /*right: 10px;*/
+  height: 44px;
+  /*min-width: 100%;*/
   white-space: nowrap;
-/*  border: 1px solid #cccccc; */
+  /*border-bottom: 1px solid #cccccc; */
 }
 
 
@@ -428,6 +429,7 @@
   overflow: hidden;
   white-space: nowrap;
   /*background-color: #FFF;*/
+  /*font-family: "museo-sans", Verdana, Arial, Helvetica, sans-serif;*/
 }
 
 #mailboxlist li
@@ -510,7 +512,7 @@
 }
 
 #mailboxlist li a:hover{
-  background-color: #F8F8F8;
+  background-color: #F7F7F7;
   cursor: pointer;
 }
 
@@ -706,7 +708,7 @@ body.messagelist
   vertical-align: middle;
   border-bottom: 1px solid #999999;
   color: #333333;
-  background: url(images/listheader.gif) top left repeat-x #CCC;
+  /*background: url(images/listheader.gif) top left repeat-x #CCC;*/
   font-size: 11px;
   font-weight: bold;
 }
@@ -734,6 +736,8 @@ body.messagelist
   width: 100%;
   color: #333333;
   text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 #messagelist thead tr td.size
@@ -1037,7 +1041,7 @@ body.messagelist
 #messagelist tr.unfocused td
 {
   color: #222;
-  background-color: #fff;
+  background-color: #f1f1f1;
 }
 
 #messagelist tr.unfocused .threads{
@@ -1577,11 +1581,13 @@ input.from_address
 }
 #messagelist thead{
   background-color: #ccc;
+  height: 30px;
 }
 
 #messagelist thead tr{
   background: #fff;
   border-bottom: 1px solid #ccc;  
+  height: 30px;
 }
 
 #rcmlistfilter {
