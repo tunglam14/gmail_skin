@@ -5,6 +5,13 @@
 <roundcube:include file="/includes/links.html" />
 <script type="text/javascript" src="/splitter.js"></script>
 <script type="text/javascript" src="/functions.js"></script>
+
+<script type="text/javascript">
+function fill(){
+document.getElementById('searchinput').value = "search...";
+}
+</script>
+
 <style type="text/css">
 <roundcube:if condition="config:preview_pane == true" />
 #mailcontframe { height: <roundcube:exp expression="!empty(cookie:mailviewsplitter) ? cookie:mailviewsplitter-5 : 195" />px; }
@@ -19,7 +26,7 @@
 
 </style>
 </head>
-<body onload="rcube_init_mail_ui()">
+<body onload="rcube_init_mail_ui(); fill()">
 
 <roundcube:include file="/includes/taskbar.html" />
 <roundcube:include file="/includes/header.html" />

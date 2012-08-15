@@ -23,15 +23,15 @@
   padding-right: 10px;
 }
 
-#messagetoolbar a.button:hover{
+/*#messagetoolbar a.button:hover{
   border-color: 1px solid #222;
-}
+}*/
 
 #messagetoolbar a.button,
 #messagetoolbar a.buttonPas {
   display: block;
   float: left;
-  width: 57px;
+  width: 56px;
   overflow: hidden;
   background: url(images/gmail_button.png) 0 0 no-repeat transparent;
   opacity: 0.99; /* this is needed to make buttons appear correctly in Chrome */
@@ -39,10 +39,10 @@
   cursor: default;
   font-size: 11px;
   font-weight: bold;
-  height: 31px;
-  line-height: 31px;
+  height: 29px;
+  line-height: 29px;
   margin-right: 10px;
-  min-width: 57px;
+  min-width: 56px;
   outline: 0 none;
   padding: 0 8px;
   text-align: center;
@@ -50,6 +50,9 @@
 
 #messagetoolbar a.button:hover{
   cursor: pointer;
+  box-shadow: 0px 0px 3px #ededed;
+  -moz-box-shadow: 0px 0px 3px #ededed;
+  -webkit-box-shadow: 0px 0px 3px #ededed;
 }
 
 
@@ -117,11 +120,11 @@
 }
 
 #messagetoolbar a.forward {
-  background-position: -317px 0;
+  background-position: -318px 0;
 }
 
 #messagetoolbar a.forwardSel {
-  background-position: -317px -32px;
+  background-position: -318px -32px;
 }
 
 #messagetoolbar a.delete {
@@ -1142,6 +1145,7 @@ td span.branch div.l3
   right: 0;
   bottom: 0;
   border: 1px solid #999;
+  border-top: none;
   background-color: #FFF;
   overflow: auto;
   z-index: 1;
@@ -1609,6 +1613,13 @@ input.from_address
     padding: 7px 6px 7px 23px;
     text-transform: uppercase;
     z-index: 10;
+}
+#rcmlistfilter:hover,
+#messagetoolbar select.mboxlist:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 3px #ededed;
+  -moz-box-shadow: 0px 0px 3px #ededed;
+  -webkit-box-shadow: 0px 0px 3px #ededed;
 }
 
 #rcmlistfilter{
