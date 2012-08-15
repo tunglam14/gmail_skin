@@ -1084,7 +1084,8 @@ fieldset.tabbed
   height: 16px;
 }
 
-#forwardmenu, #replyallmenu, #messagemenu{
+#forwardmenu, #replyallmenu,
+#messagemenu, #composeoptionsmenu,
+#mailboxoptionsmenu{
   width: 200px;
 }
-

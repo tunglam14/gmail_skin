@@ -212,7 +212,8 @@
 {
   position: relative;
   margin: 0 8px;
-  top: 6px;
+  top: -1px;
+  width: 125px;
 }
 
 #messagetoolbar select.mboxlist option
@@ -1600,13 +1601,16 @@ input.from_address
   height: 30px;
 }
 
-#rcmlistfilter {
+#rcmlistfilter, #messagetoolbar select.mboxlist {
     background: none repeat scroll 0 0 #F1F1F1;
     border: 1px solid #D6D6D6;
     font-size: 11px;
     height: 30px;
     padding: 7px 6px 7px 23px;
     text-transform: uppercase;
-    width: 80px;
     z-index: 10;
+}
+
+#rcmlistfilter{
+  width: 80px;
 }
